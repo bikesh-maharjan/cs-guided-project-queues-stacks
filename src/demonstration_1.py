@@ -11,6 +11,8 @@ not remove the item.
 *Note: Your stacks will contain only integers. You should be able to get a
 runtime of O(1) for push(), pop(), and get_max().*
 """
+
+
 class Stack:
     def __init__(self):
         """Initialize an empty stack"""
@@ -35,22 +37,19 @@ class Stack:
             return None
         return self.items[-1]
 
+
 class MaxStack:
     def __init__(self):
         # Your code here
-
 
     def push(self, item):
         """Add a new item onto the top of our stack."""
         # Your code here
 
-
     def pop(self):
         """Remove and return the top item from our stack."""
         # Your code here
 
-
     def get_max(self):
         """The last item in maxes_stack is the max item in our stack."""
         # Your code here
-
