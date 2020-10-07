@@ -1,4 +1,4 @@
-class LLQueue:
+class ArrayQueue:
     def__init__(self):
         self.storage = []
 

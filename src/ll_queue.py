@@ -7,8 +7,8 @@ class LLQueue:
 
     # adds a value to the back of the queue
     def enqueue(self, value):
-        self.storage.add_to_tail(value)
+        self.storage.add_to_tail(value)  # 0(1)
     # removes a value from the front of the queue
 
     def dequeue(self):
-        return self.storage.remove_head()
+        return self.storage.remove_head()  # 0(1)

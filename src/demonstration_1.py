@@ -41,15 +41,50 @@ class Stack:
 class MaxStack:
     def __init__(self):
         # Your code here
+        self.stack = Stack()
+        # this variable will always hold on to our max value in the stack
+        self.maxes = Stack()
 
     def push(self, item):
         """Add a new item onto the top of our stack."""
         # Your code here
+        self.stack.push(item)
+        # check to see if 'self-max' needs to be updated
+        # if iteam > self.max:
+        #self.max = item
+        if len(self.maxes.items) == 0 or self.maxes.peek() < self.maxes.push(item)
 
     def pop(self):
         """Remove and return the top item from our stack."""
         # Your code here
+        # peek the top element of the stack
+        # if it matches our 'self.max' we need to update 'self.max'
+        # to be the max of the remaining stack elements
+        if self.stack.peek() == self.maxes.peek():
+            self.maxes.pop()  # 0(n)
+        return self.stack.pop()
 
     def get_max(self):
         """The last item in maxes_stack is the max item in our stack."""
         # Your code here
+        # we can't mess with the order of elements in our 'self.stack'
+        # use a sort that copies the input before sorting them
+        # return sorted(self.stack.items)[-1]  #0(n log n)
+        # use the 'max' function
+        # return max(self.storage.items) #0(n)
+
+        return self.maxes.peek()
+
+
+max_stack = MaxStack()
+max.stack.push(98)
+max.stack.push(15)
+max.stack.push(27)
+max.stack.push(101)
+max.stack.push(25)
+
+
+print(max_stack.get_max())
+print(max_stack.pop())
+print(max_stack.pop())
+print(max_stack.get_max())
